@@ -17,7 +17,7 @@ namespace Company.Function
             [HttpTrigger(AuthorizationLevel.Anonymous, "get",Route = "get-entity")] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation("C# HTTP trigger function processed a request at GetEntity");
+            log.LogInformation("C# HTTP trigger function processed a request at GetEntity for test.");
 
             string name = req.Query["name"];
 
